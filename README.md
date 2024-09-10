@@ -67,6 +67,9 @@ Install all required dependencies using the ```requirements.txt``` file:
 pip install -r requirements.txt
 ```
 
+>[!NOTE]
+>Please visit [Gymnasium on GitHub](https://github.com/Farama-Foundation/Gymnasium) to install proper module in order to use specific ```gym``` enviroment. 
+
 ### Step 5: Run the Dash app
 Finally, you can run the Dash app using the following command:
 ```bash
