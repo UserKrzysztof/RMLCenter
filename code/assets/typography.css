@@ -1,0 +1,17 @@
+body {
+    background-color: midnightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: lightgray;
+    margin-left: 5%;
+    margin-top: 0px; 
+    margin-bottom: 5%;
+}
+
+.vline {
+    border-left: 2px dashed black;
+    height: 96%;
+}
+

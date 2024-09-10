@@ -1,0 +1,30 @@
+.env-container {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: inherit;
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+#env-search-btn {
+    background-color: rgb(254, 254, 254);
+    color: rgb(107, 105, 105);
+    border-radius: 5px;
+    border-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    font-size: large;
+    height: 44px;
+    padding: 3px;
+    margin: 1%;
+    display: inline;
+}
+
+#env-search-btn:active {
+    background-color: rgba(240, 255, 255, 0.4);
+    border-color: rgba(211, 211, 211, 0);
+}

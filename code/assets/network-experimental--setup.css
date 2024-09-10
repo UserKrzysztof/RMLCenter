@@ -1,0 +1,56 @@
+.network-draggable{
+    color: black;
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 4px auto;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.network-delete-layer-btn {
+    display: inline;
+    color: black;
+    font-size: 1.5em;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.network-show-layrs-opt-btn{
+    display: inline;
+    font-size: 1.5em;
+    margin: 0 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.network-lyrs-btns-cont{
+    margin: 2% 3%;
+}
+
+.network-mobile-menu {
+    display: none;
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 4px auto auto;
+    background-color: white;
+    position: relative;
+
+}
+
+.network-layer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 4px auto;
+    position: relative;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}

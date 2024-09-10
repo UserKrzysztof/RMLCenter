@@ -1,0 +1,88 @@
+.modal { /*w3schools*/
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1050; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.719); /* Black w/ opacity */  
+}
+
+.modal-content {
+    background-color: #080c58;
+    margin: 3% auto; 
+    padding: 10px;
+    border: 2px solid  lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+  }
+
+/*.modal-close-spacer {
+    display: inline-block;
+    width: calc(100% - 40px);
+    border: none;
+}*/
+  
+.modal-close {
+    display: inline-block;
+    /*width: 40px; /* Adjust this based on the size of your close button */
+    border: none;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0);
+}
+
+.modal-header {
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border-style: none;
+    margin: 0;
+    margin-bottom: 0.5%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.modal-header .modal-header--title {
+    font-size: 2em;
+    margin: 0;
+    margin-left: 2%;
+    color: lightgray;
+}
+
+.text-input{
+    font-size: medium;
+    width: 260px;
+    height: fit-content;
+    overflow-x: scroll;
+    padding: 3px;
+    margin: 1%;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    display: inline;
+}
+
+.modal-submit-button{
+    background-color: rgb(18, 74, 205);
+    border-radius: 5px;
+    font-size: x-large;
+    height: fit-content;
+    margin: auto;
+    display: inline;
+    color: azure;
+    border-style: none;
+    cursor: pointer;  
+}
+
+.modal-submit-button:active{
+    background-color: rgba(18, 74, 205, 0.48);
+    color: gray;
+}
