@@ -15,6 +15,55 @@ The Dash app (GUI) that helps set up a reinforcement learning project using a DQ
 >[!NOTE]
 >There is an information about incomig features in the last section of this file.</dd>
 
+User Guide
+=========
+
+### Description of the main page
+![main_page](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/main_page.png)
+
+1. Buttons that open modals with setup options.
+2. Log. There will be printed all messages from the app.
+3. Recap videos captured during episodes will be shown in this area
+   3.1 Dropdown menu with available videos to be played
+   3.2 Video player
+4. Graph showing reward income from each episode
+
+---
+The following order of operations is recommended:
+
+### Step 1: Set up enviroment
+![env](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/env.png)
+First, input the environment name. If the name is correct and has specific parameters, they will appear in the designated space below the environment name input.
+The input fields for the parameters of the ```gym.make()``` function will be enabled once you select the proper enviroment.<br/>
+After setting up all the necessary parameters, click the "Submit" button to continue.
+
+### Step 2: Set up DQN agent's network
+Before setting up network it is good to learn about ```torch.nn``` module at https://pytorch.org/docs/stable/nn.html 
+![net](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/net.png)
+Click the button to open a dropdown menu with all the supported layers that can be added to the agent's network.
+![net2](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/net2.png)
+Each added layer has its own menu with parameters, which can be opened by clicking the circle button (a circle with a white arrow) on the right side of the layer's box.
+You can also move and delete layers by using the controls on the right side of the layer. These controls will appear when you hover over the layer.<br/>
+Once you've set up all the necessary parameters, click the "Submit" button to continue.
+
+### Step 3: Set up learning hiperparameters
+![hyper](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/hyper.png)
+Here, you can set additional hyperparameters for the agent, such as the number of training episodes, learning rate, and more.<br\>
+Once you've set up all the necessary parameters, click the "Submit" button to continue.
+
+### Step 4: Run calculations
+<img src="https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/setup_done.png" width="30%">
+<br/>
+Once you complete the setup, you should see three green checkmarks on the main page, and the "Run" button will be enabled.
+You can now click the "Run" button to follow the progress of the training process.
+
+Tech
+=======
+* The agent's code is adapted from: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
+* Dash: https://dash.plotly.com
+* Flask: https://flask.palletsprojects.com/en/3.0.x
+* PyTorch: https://pytorch.org
+* Gymnasium: https://gymnasium.farama.org
 
 Installation and First Run
 =================
@@ -78,57 +127,6 @@ python code\app.py
 
 ### Access the app
 After running the command, the app will be available at http://127.0.0.1:8050/ in your web browser.
-
-User Guide
-=========
-
-
-### Description of the main page
-![main_page](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/main_page.png)
-
-1. Buttons that open modals with setup options.
-2. Log. There will be printed all messages from the app.
-3. Recap videos captured during episodes will be shown in this area
-   3.1 Dropdown menu with available videos to be played
-   3.2 Video player
-4. Graph showing reward income from each episode
-
----
-The following order of operations is recommended:
-
-### Step 1: Set up enviroment
-![env](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/env.png)
-First, input the environment name. If the name is correct and has specific parameters, they will appear in the designated space below the environment name input.
-The input fields for the parameters of the ```gym.make()``` function will be enabled once you select the proper enviroment.<br/>
-After setting up all the necessary parameters, click the "Submit" button to continue.
-
-### Step 2: Set up DQN agent's network
-Before setting up network it is good to learn about ```torch.nn``` module at https://pytorch.org/docs/stable/nn.html 
-![net](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/net.png)
-Click the button to open a dropdown menu with all the supported layers that can be added to the agent's network.
-![net2](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/net2.png)
-Each added layer has its own menu with parameters, which can be opened by clicking the circle button (a circle with a white arrow) on the right side of the layer's box.
-You can also move and delete layers by using the controls on the right side of the layer. These controls will appear when you hover over the layer.<br/>
-Once you've set up all the necessary parameters, click the "Submit" button to continue.
-
-### Step 3: Set up learning hiperparameters
-![hyper](https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/hyper.png)
-Here, you can set additional hyperparameters for the agent, such as the number of training episodes, learning rate, and more.<br\>
-Once you've set up all the necessary parameters, click the "Submit" button to continue.
-
-### Step 4: Run calculations
-<img src="https://github.com/UserKrzysztof/RMLCenter/blob/main/read_me_content/setup_done.png" width="30%">
-<br/>
-Once you complete the setup, you should see three green checkmarks on the main page, and the "Run" button will be enabled.
-You can now click the "Run" button to follow the progress of the training process.
-
-Tech
-=======
-* The agent's code is adapted from: https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
-* Dash: https://dash.plotly.com
-* Flask: https://flask.palletsprojects.com/en/3.0.x
-* PyTorch: https://pytorch.org
-* Gymnasium: https://gymnasium.farama.org
 
 Incoming Features (Future Versions of the App)
 ============
