@@ -122,6 +122,7 @@ pip install -r requirements.txt
 
 >[!NOTE]
 >Please visit [Gymnasium on GitHub](https://github.com/Farama-Foundation/Gymnasium) to install proper module in order to use specific ```gym``` enviroment.
+>
 >Some users may encounter problems with ```imageio``` package. Please visit [imageio's docs page](https://imageio.readthedocs.io/en/stable/) for more information.
 
 ### Step 5: Run the Dash app
