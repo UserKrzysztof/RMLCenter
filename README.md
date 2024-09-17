@@ -65,6 +65,8 @@ Tech
 * PyTorch: https://pytorch.org
 * Gymnasium: https://gymnasium.farama.org
 
+All packages are listed in the ```requirements.txt``` file.
+
 Installation and First Run
 =================
 
@@ -75,6 +77,8 @@ Ensure you have the following installed on your system:
 - **Python 3.11+**
 - **pip** (Python package manager)
 - **Git**
+
+Some might need to install **FFmpeg** separately.
 
 ### Step 1: Clone the repository
 
@@ -97,17 +101,17 @@ cd RMLCenter
 It's a good practice to create a virtual environment to manage dependencies:
 
 ```bash
-python -m venv venv
+python -m venv RMLCenterVenv
 ```
 
 Acivate the virtual enviroment
 * on Windows:
   ```bash
-  venv\Scripts\activate
+  RMLCenterVenv\Scripts\activate
   ```
 * on macOS\Linux
   ```bash
-  source venv\Scripts\activate
+  source RMLCenterVenv/bin/activate
   ```
 
 ### Step 4: Install dependencies
@@ -117,12 +121,14 @@ pip install -r requirements.txt
 ```
 
 >[!NOTE]
->Please visit [Gymnasium on GitHub](https://github.com/Farama-Foundation/Gymnasium) to install proper module in order to use specific ```gym``` enviroment. 
+>Please visit [Gymnasium on GitHub](https://github.com/Farama-Foundation/Gymnasium) to install proper module in order to use specific ```gym``` enviroment.
+>Some users may encounter problems with ```imageio``` package. Please visit [imageio's docs page](https://imageio.readthedocs.io/en/stable/) for more information.
 
 ### Step 5: Run the Dash app
-Finally, you can run the Dash app using the following command:
+Finally, you can run the Dash app using the following commands:
 ```bash
-python code\app.py
+cd code
+python app.py
 ```
 
 ### Access the app
