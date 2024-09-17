@@ -134,7 +134,7 @@ python app.py
 ### Access the app
 After running the command, the app will be available at http://127.0.0.1:8050/ in your web browser.
 
-Incoming Features (Future Versions of the App)
+Incoming Features
 ============
 - Turning off environment rendering. Render on demand.
 - Overfitting alert
